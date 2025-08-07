@@ -14,7 +14,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
-        <meta name="description" content="Next.js Pages Router Template with MUI and Styled Components" />
+        <meta
+          name="description"
+          content="Next.js Pages Router Template with MUI and Styled Components"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body>

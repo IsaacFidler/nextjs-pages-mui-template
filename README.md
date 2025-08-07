@@ -17,11 +17,13 @@ A modern Next.js template with TypeScript, Material-UI, and Styled Components.
 ## Quick Start
 
 1. **Install dependencies:**
+
    ```bash
    yarn install
    ```
 
 2. **Start development server:**
+
    ```bash
    yarn dev
    ```
@@ -61,6 +63,7 @@ src/__tests__/     # Test files
 ## Testing
 
 ### Running Tests
+
 ```bash
 # Run all tests
 yarn test
@@ -73,6 +76,7 @@ yarn test:coverage
 ```
 
 ### Writing Tests
+
 ```tsx
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -87,10 +91,10 @@ describe('Button', () => {
   it('calls onClick when clicked', async () => {
     const handleClick = jest.fn();
     const user = userEvent.setup();
-    
+
     render(<Button onClick={handleClick}>Click me</Button>);
     await user.click(screen.getByRole('button'));
-    
+
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 });
@@ -99,15 +103,17 @@ describe('Button', () => {
 ## Styling Options
 
 ### Material-UI Components
+
 ```tsx
 import { Button, Card, Typography } from '@mui/material';
 
 <Button variant="contained" color="primary">
   Click me
-</Button>
+</Button>;
 ```
 
 ### Styled Components
+
 ```tsx
 import styled from 'styled-components';
 
@@ -122,12 +128,14 @@ const StyledButton = styled(Button)`
 ## Code Quality
 
 ### ESLint
+
 ```bash
 # Check for linting issues
 yarn lint
 ```
 
 ### Prettier
+
 ```bash
 # Format code
 yarn format

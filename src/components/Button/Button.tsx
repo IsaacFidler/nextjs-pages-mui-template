@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledButton = styled(MuiButton)`
   margin: 8px;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -16,4 +16,4 @@ interface CustomButtonProps extends ButtonProps {
 
 export const Button: React.FC<CustomButtonProps> = ({ children, ...props }) => {
   return <StyledButton {...props}>{children}</StyledButton>;
-}; 
+};
